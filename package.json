@@ -10,7 +10,8 @@
     "start": "node src"
   },
   "dependencies": {
-    "http-proxy": "^1.15.2"
+    "http-proxy": "^1.15.2",
+    "winston": "^2.3.0"
   },
   "engines": {
     "node": ">= 6"
