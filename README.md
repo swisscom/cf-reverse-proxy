@@ -1,6 +1,6 @@
 # CF Kibana Proxy
 
-This small proxy app helps you to make your Kibana dashboard from an [ELK instance](https://docs.developer.swisscom.com/service-offerings/elk.html) publicly available. For it to work, the app needs to be bound to your ELK service instance.
+This small proxy app helps you to make your Kibana dashboard from a Swisscom Application Cloud [ELK instance](https://docs.developer.swisscom.com/service-offerings/elk.html) publicly available. For it to work, the app needs to be bound to your ELK service instance.
 
 ## How to use
 
