@@ -1,20 +1,20 @@
 {
   "name": "kibana-proxy",
   "version": "0.1.0",
+  "private": true,
   "description": "Helps you to make your Swisscom Application Cloud Kibana dashboard publicly available",
   "keywords": [
     "kibana",
-    "cloudfoundry"
+    "cloud-foundry"
   ],
   "scripts": {
     "start": "node src"
   },
   "dependencies": {
-    "http-proxy": "^1.15.2",
-    "winston": "^2.3.1"
+    "http-proxy": "^1.16.2"
   },
   "engines": {
-    "node": ">= 6"
+    "node": "^8.0.0 || ^9.0.0"
   },
   "repository": {
     "type": "git",

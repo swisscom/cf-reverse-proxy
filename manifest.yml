@@ -1,10 +1,10 @@
 ---
 applications:
-- name: kibanaProxy
-  memory: 128M
+- name: kibana-proxy
+  memory: 64M
   instances: 1
   buildpack: https://github.com/cloudfoundry/nodejs-buildpack.git
-  host: kibanaproxy
+  random-route: true
 
   services:
   - my-elk

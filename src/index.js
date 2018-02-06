@@ -1,7 +1,13 @@
 "use strict";
 
-const server = require("./server");
+const httpProxy = require("http-proxy");
 
-const DEFAULT_PORT = 3000;
+// Read Kibana credentials from VCAP_SERVICES
+const vcapServices = JSON.parse(process.env.VCAP_SERVICES);
+const target = vcapServices.elk[0].credentials.kibanaUrl;
 
-server.listen(process.env.PORT || DEFAULT_PORT);
+const proxy = httpProxy.createProxyServer({ target });
+
+proxy.on("error", err => console.error(err));
+
+proxy.listen(process.env.PORT || 3000);

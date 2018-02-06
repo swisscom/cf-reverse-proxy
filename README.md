@@ -5,6 +5,5 @@ This small proxy app helps you to make your Kibana dashboard from a Swisscom App
 ## How to use
 
 1. Clone this repo
-1. Change the `host` in `manifest.yml` to something that isn't taken yet
 1. Change the entry in `services` in `manifest.yml` from `my-elk` to the name of your ELK instance in Cloud Foundry
 1. Run `cf push`
