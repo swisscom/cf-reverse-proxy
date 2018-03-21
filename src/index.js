@@ -2,11 +2,7 @@
 
 const httpProxy = require("http-proxy");
 
-// Read Kibana credentials from VCAP_SERVICES
-const vcapServices = JSON.parse(process.env.VCAP_SERVICES);
-const target = vcapServices.elk[0].credentials.kibanaUrl;
-
-const proxy = httpProxy.createProxyServer({ target });
+const proxy = httpProxy.createProxyServer({ process.env.BACKEND_URL });
 
 proxy.on("error", err => console.error(err));
 
