@@ -1,10 +1,10 @@
 {
-  "name": "kibana-proxy",
+  "name": "reverse-proxy",
   "version": "0.1.0",
   "private": true,
-  "description": "Helps you to make your Swisscom Application Cloud Kibana dashboard publicly available",
+  "description": "Helps you to make HTTP backcends publicly available",
   "keywords": [
-    "kibana",
+    "reverse-proxy",
     "cloud-foundry"
   ],
   "scripts": {
@@ -18,9 +18,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/swisscom/cf-kibana-proxy.git"
+    "url": "https://github.com/swisscom/cf-reverse-proxy.git"
   },
   "bugs": {
-    "url": "https://github.com/swisscom/cf-kibana-proxy/issues"
+    "url": "https://github.com/swisscom/cf-reverse-proxy/issues"
   }
 }
