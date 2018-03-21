@@ -5,7 +5,7 @@ const httpProxy = require("http-proxy");
 const target = process.env.BACKEND_URL;
 const proxy = httpProxy.createProxyServer({ 
   target: process.env.BACKEND_URL,
-  secure: process.env.SKIP_SSL == 'true'
+  secure: process.env.SKIP_SSL == 'true' ? false : true
 });
 
 proxy.on("error", err => console.error(err));
