@@ -1,10 +1,9 @@
 ---
 applications:
-- name: kibana-proxy
+- name: reverse-proxy
   memory: 64M
-  instances: 1
+  instances: 2
   buildpack: https://github.com/cloudfoundry/nodejs-buildpack.git
   random-route: true
-
-  services:
-  - my-elk
+  env:
+    BACKEND_URL: https://www.example.com/
