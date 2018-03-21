@@ -2,7 +2,8 @@
 
 const httpProxy = require("http-proxy");
 
-const proxy = httpProxy.createProxyServer({ process.env.BACKEND_URL });
+const target = process.env.BACKEND_URL;
+const proxy = httpProxy.createProxyServer({ target });
 
 proxy.on("error", err => console.error(err));
 
