@@ -2,7 +2,7 @@
   "name": "reverse-proxy",
   "version": "0.1.0",
   "private": true,
-  "description": "Helps you to make HTTP backcends publicly available",
+  "description": "Helps you to make HTTP backends publicly available",
   "keywords": [
     "reverse-proxy",
     "cloud-foundry"
