@@ -11,7 +11,7 @@
     "start": "node src"
   },
   "dependencies": {
-    "http-proxy": "^1.16.2"
+    "http-proxy": "^1.18.1"
   },
   "engines": {
     "node": "^8.0.0 || ^9.0.0"
